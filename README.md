@@ -1,4 +1,4 @@
-# mask
+# Mask
 GLPI plugin that provides a mask to prevent multiple clicks (or Enter keys) for forms.
 
 Compliant to GLPI 0.90
