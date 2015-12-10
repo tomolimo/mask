@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <name>Mask</name>
+   <key>mask</key>
+   <state>stable</state>
+    <logo>https://raw.githubusercontent.com/tomolimo/mask/master/plugin.png</logo>
+   <description>
+      <short>
+         <fr>Affiche un masque semi-transparent pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons de submit.</fr>
+         <en>Shows a half transparent mask to prevent multi-clicks (and multiple ENTER keys) on submit buttons.</en>
+      </short>
+      <long>
+         <fr>Ce plugin est fait pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons lors d'un submit. Il affiche un masque après un click (ou touche ENTER) sur un bouton de submit.
+Ce masque est semi-transparent, et permet de voir le texte dessous. Il est aussi affiché lors de la navigation d'une page à l'autre.</fr>
+         <en>This plugin shows a mask when you click (or press ENTER key) on a submit button. It prevents you from double clicks (or multiple ENTER key presses) on submit buttons.
+The mask is half transparent so that you can still see what's behind. It is also shown during page navigation.</en>
+      </long>
+   </description>
+   <homepage>https://github.com/tomolimo/mask</homepage>
+   <download>https://github.com/tomolimo/mask/releases</download>
+   <authors>
+      <author>Olivier Moron </author>
+   </authors>
+   <versions>
+   <version>
+          <num>1.1.0</num>
+          <compatibility>0.83</compatibility>
+      </version>
+   <version>
+          <num>1.1.0</num>
+          <compatibility>0.80</compatibility>
+      </version>
+   <version>
+          <num>2.0.0</num>
+          <compatibility>0.90</compatibility>
+      </version>
+
+
+   </versions>
+   <langs>
+      <lang>Any</lang>
+   </langs>
+   <license><![CDATA[GPL v2+]]></license>
+   <tags>
+         <fr>
+            <tag>Formulaires</tag>
+         </fr>
+         <en>
+            <tag>Forms</tag>
+         </en>
+   </tags>
+</root>
