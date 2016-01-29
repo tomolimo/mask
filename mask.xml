@@ -15,7 +15,7 @@ Ce masque est semi-transparent (opacité 30%), et permet de voir le texte dessou
 Ce plugin empèche aussi le comportement de la touche 'backspace' qui par défaut exécute un retour à la page précédente.]]></fr>
          <en><![CDATA[This plugin shows a mask when you click (or press ENTER key) on a submit button. It prevents you from double clicks (or multiple ENTER key presses) on submit buttons.
 The mask is semi-transparent (opacity 30%) so that you can still see what's behind. It is also shown during page navigation.
-This plugin also prevents default backspace key behaviour which goes back in browser history when key is hit outside of a text box.]]></en>
+This plugin also prevents default backspace key behaviour which by default goes back in browser history when key is hit outside of a text box.]]></en>
       </long>
    </description>
    <homepage>https://github.com/tomolimo/mask</homepage>
