@@ -14,19 +14,27 @@ $(document).ready(function () {
         }
     });
 
-    function blockBrowser() {
-        // will show an overlay to prevent double-click on buttons
-        // and such will prevent double form POST
-        $.blockUI({
-            message: null
-            , fadeIn: 500
-            , overlayCSS: { opacity: 0.3, backgroundColor: '#aaaaaa' }            
-        });
 
-        //        $(window).on('unload', function () { setTimeout($.unblockUI, 1000); });
-        $(window).on('unload', $.unblockUI );
+    $("<div id='mask_overlay'></div>").css({
+        "position": "fixed",
+        "top": 0,
+        "left": 0,
+        "width": "100%",
+        "height": "100%",
+        "background-color": "rgba(170,170,170,.3)",
+        "z-index": 10000,
+        "cursor": "wait",
+        "display": "none"
+    }).appendTo("body");
+
+    function displayOverlay() {
+        $("#mask_overlay").show();
     }
 
-    $(document).on('click', 'input[type=submit], a[class!=ui-tabs-anchor][id!=menu_all_button][id!=global_entity_select][href!=\\#], input[name=is_deleted]', blockBrowser);
+    function removeOverlay() {
+        $("#mask_overlay").hide();
+    }
+
+    $(document).on('click', 'input[type=submit], a[href*=reset\\=reset], input[name=is_deleted]', displayOverlay);
 
 });
