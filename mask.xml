@@ -12,9 +12,10 @@
       <long>
          <fr><![CDATA[Ce plugin est fait pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons lors d'un submit. Il affiche un masque après un click (ou touche ENTER) sur un bouton de submit.
 Ce masque est semi-transparent (opacité 30%), et permet de voir le texte dessous. Il est aussi affiché lors de la navigation d'une page à l'autre.
-Ce plugin empèche aussi le comportement de la touche 'backspace' qui par défaut exécute un aller à la page précédente.]]></fr>
+Ce plugin empèche aussi le comportement de la touche 'backspace' qui par défaut exécute un retour à la page précédente.]]></fr>
          <en><![CDATA[This plugin shows a mask when you click (or press ENTER key) on a submit button. It prevents you from double clicks (or multiple ENTER key presses) on submit buttons.
-The mask is semi-transparent (opacity 30%) so that you can still see what's behind. It is also shown during page navigation.]]></en>
+The mask is semi-transparent (opacity 30%) so that you can still see what's behind. It is also shown during page navigation.
+This plugin also prevent default backspace behaviour which goes back in browser history when hit outside of a text box.]]></en>
       </long>
    </description>
    <homepage>https://github.com/tomolimo/mask</homepage>
