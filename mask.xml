@@ -43,12 +43,12 @@ This plugin also prevents default backspace key behaviour which by default goes 
           <compatibility>0.85</compatibility>
       </version>
    <version>
-          <num>2.1.0</num>
+          <num>2.1.1</num>
           <compatibility>0.90</compatibility>
       </version>
    <version>
-          <num>2.1.0</num>
-          <compatibility>0.91</compatibility>
+          <num>2.1.1</num>
+          <compatibility>9.1</compatibility>
       </version>
 
    </versions>

@@ -14,25 +14,24 @@ $(document).ready(function () {
         }
     });
 
-
-    $("<div id='mask_overlay'></div>").css({
-        "position": "fixed",
-        "top": 0,
-        "left": 0,
-        "width": "100%",
-        "height": "100%",
-        "background-color": "rgba(170,170,170,.3)",
-        "z-index": 10000,
-        "cursor": "wait",
-        "display": "none"
-    }).appendTo("body");
-
     function displayOverlay() {
-        $("#mask_overlay").show();
+        
+        $("<div class='ui-widget-overlay ui-front'></div>").appendTo("body");
+
+        var timer = window.setInterval(function () {
+            var count = $('.ui-widget-overlay.ui-front').length;
+            if (count == 2) {
+                $($('.ui-widget-overlay.ui-front')[1]).remove();
+                window.clearInterval(timer);
+            } 
+
+        }, 10);
     }
 
+
+
     function removeOverlay() {
-        $("#mask_overlay").hide();
+        $('.ui-widget-overlay.ui-front').remove();
     }
 
     $(document).on('click', 'input[type=submit], a[href*=reset\\=reset], input[name=is_deleted]', displayOverlay);
