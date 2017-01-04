@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(document).on("keydown", function (e) {
         // prevents backspace when not in textarea nor input
         // and such will prevent browser to navigate to previous HTML page
-        if (e.which === 8 && !$(e.target).is("input:text, textarea")) {
+        if (e.which === 8 && !$(e.target).is("input:text, textarea, input[type=password]")) {
             e.preventDefault();
         }
 

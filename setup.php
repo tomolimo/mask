@@ -46,7 +46,7 @@ function plugin_init_mask() {
 function plugin_version_mask() {
 
    return array('name'           => 'Mask',
-                'version'        => '2.1.2',
+                'version'        => '2.1.3',
                 'author'         => 'Olivier Moron',
                 'license'        => 'GPLv2+',
                 'homepage'       => 'https://forge.glpi-project.org/projects/mask/',
