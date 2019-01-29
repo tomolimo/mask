@@ -15,17 +15,27 @@ $(document).ready(function () {
     });
 
     function displayOverlay() {
-        
-        $("<div class='ui-widget-overlay ui-front'></div>").appendTo("body");
+        // don't use displayOverlay when submit input open new tab or update parent ( example: pdf generation )        
+        if (!($(this).is('input[type=submit]')
+            && $(this).parents('form').length > 0            
+            && ($(this).parents('form').first().attr('target') == '_blank' || $(this).parents('form').first().attr('target') == '_parent'))) {            
 
-        var timer = window.setInterval(function () {
-            var count = $('.ui-widget-overlay.ui-front').length;
-            if (count == 2) {
-                $($('.ui-widget-overlay.ui-front')[1]).remove();
+            $("<div class='ui-widget-overlay ui-front'></div>").appendTo("body");
+            var count = $('.ui-widget-overlay.ui-front').length;            
+            while (count > 1) {
+                $($('.ui-widget-overlay.ui-front')[count - 1]).removeClass('ui-widget-overlay');
+                count = $('.ui-widget-overlay.ui-front').length;                
+            }
+            /*var timer = window.setInterval(function () {
+                var count = $('.ui-widget-overlay.ui-front').length;
+                console.log(count);
+                while(count > 1) {
+                    $($('.ui-widget-overlay.ui-front')[count-1]).remove();
+                    count = $('.ui-widget-overlay.ui-front').length;                    
+                }
                 window.clearInterval(timer);
-            } 
-
-        }, 10);
+            }, 10);*/
+        }
     }
 
 
@@ -33,7 +43,8 @@ $(document).ready(function () {
     function removeOverlay() {
         $('.ui-widget-overlay.ui-front').remove();
     }
-
-    $(document).on('click', 'input[type=submit], a[href*=reset\\=reset], input[name=is_deleted]', displayOverlay);
+    
+    $(document).on('click', 'input[type=submit], a[href*=reset\\=reset], input[name=is_deleted]', displayOverlay);    
+    
 
 });
