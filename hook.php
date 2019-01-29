@@ -44,5 +44,3 @@ function plugin_mask_uninstall() {
 
    return true;
 }
-
-?>
