@@ -3,19 +3,23 @@
    <name>Mask</name>
    <key>mask</key>
    <state>stable</state>
-    <logo>https://raw.githubusercontent.com/tomolimo/mask/master/plugin.png</logo>
+   <logo>https://raw.githubusercontent.com/tomolimo/mask/master/plugin.png</logo>
    <description>
       <short>
          <fr><![CDATA[Affiche un masque semi-transparent pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons de submit.]]></fr>
          <en><![CDATA[Shows a half transparent mask to prevent multi-clicks (and multiple ENTER keys) on submit buttons.]]></en>
       </short>
       <long>
-         <fr><![CDATA[Ce plugin est fait pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons lors d'un submit. Il affiche un masque après un click (ou touche ENTER) sur un bouton de submit.
+         <fr>
+            <![CDATA[Ce plugin est fait pour empêcher le multi-click (et les multiples touches ENTER) sur les boutons lors d'un submit. Il affiche un masque après un click (ou touche ENTER) sur un bouton de submit.
 Ce masque est semi-transparent (opacité 30%), et permet de voir le texte dessous. Il est aussi affiché lors de la navigation d'une page à l'autre.
-Ce plugin empèche aussi le comportement de la touche 'backspace' qui par défaut exécute un retour à la page précédente.]]></fr>
-         <en><![CDATA[This plugin shows a mask when you click (or press ENTER key) on a submit button. It prevents you from double clicks (or multiple ENTER key presses) on submit buttons.
+Ce plugin empèche aussi le comportement de la touche 'backspace' qui par défaut exécute un retour à la page précédente.]]>
+         </fr>
+         <en>
+            <![CDATA[This plugin shows a mask when you click (or press ENTER key) on a submit button. It prevents you from double clicks (or multiple ENTER key presses) on submit buttons.
 The mask is semi-transparent (opacity 30%) so that you can still see what's behind. It is also shown during page navigation.
-This plugin also prevents default backspace key behaviour which by default goes back in browser history when key is hit outside of a text box.]]></en>
+This plugin also prevents default backspace key behaviour which by default goes back in browser history when key is hit outside of a text box.]]>
+         </en>
       </long>
    </description>
    <homepage>https://github.com/tomolimo/mask</homepage>
@@ -25,10 +29,10 @@ This plugin also prevents default backspace key behaviour which by default goes 
    <authors>
       <author>Olivier Moron </author>
    </authors>
-   <versions>   
+   <versions>
       <version>
-          <num>1.1.0</num>
-          <compatibility>0.80</compatibility>
+         <num>1.1.0</num>
+         <compatibility>0.80</compatibility>
       </version>
       <version>
          <num>1.1.0</num>
@@ -50,19 +54,23 @@ This plugin also prevents default backspace key behaviour which by default goes 
          <num>2.2.0</num>
          <compatibility>9.2</compatibility>
       </version>
+      <version>
+         <num>2.3.0</num>
+         <compatibility>9.3</compatibility>
+      </version>
    </versions>
    <langs>
       <lang>Any</lang>
    </langs>
    <license><![CDATA[GPL v2+]]></license>
    <tags>
-         <fr>
-            <tag>Formulaires</tag>
-            <tag>Masque</tag>
-         </fr>
-         <en>
-            <tag>Forms</tag>
-            <tag>Mask</tag>
-         </en>
+      <fr>
+         <tag>Formulaires</tag>
+         <tag>Masque</tag>
+      </fr>
+      <en>
+         <tag>Forms</tag>
+         <tag>Mask</tag>
+      </en>
    </tags>
 </root>

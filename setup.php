@@ -32,7 +32,7 @@ along with GLPI. If not, see <http://www.gnu.org/licenses/>.
 // Purpose of file: Provides frame for masking button clicks and key pressed
 // ----------------------------------------------------------------------
 
-define ("PLUGIN_MASK_VERSION", "2.2.0");
+define ("PLUGIN_MASK_VERSION", "2.3.0");
 
 function plugin_init_mask() {
    global $PLUGIN_HOOKS,$LANG,$CFG_GLPI;
@@ -48,11 +48,11 @@ function plugin_init_mask() {
 function plugin_version_mask() {
 
    return ['name'           => 'Mask',
-            'version'        => PLUGIN_MASK_VERSION,
-            'author'         => 'Olivier Moron',
-            'license'        => 'GPLv2+',
-            'homepage'       => 'https://github.com/tomolimo/mask',
-            'minGlpiVersion' => '0.90'];
+                'version'        => PLUGIN_MASK_VERSION,
+                'author'         => 'Olivier Moron',
+                'license'        => 'GPLv2+',
+                'homepage'       => 'https://github.com/tomolimo/mask',
+                'minGlpiVersion' => '0.90'];
 }
 
 
