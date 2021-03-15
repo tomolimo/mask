@@ -56,9 +56,16 @@ This plugin also prevents default backspace key behaviour which by default goes 
       </version>
       <version>
          <num>2.3.0</num>
-         <compatibility>9.4</compatibility>
          <compatibility>9.3</compatibility>
       </version>
+     <version>
+       <num>2.4.0</num>
+       <compatibility>9.4</compatibility>
+     </version>
+     <version>
+       <num>3.0.0</num>
+       <compatibility>9.5</compatibility>
+     </version>
    </versions>
    <langs>
       <lang>Any</lang>
