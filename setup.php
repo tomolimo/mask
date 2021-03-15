@@ -32,7 +32,7 @@ along with GLPI. If not, see <http://www.gnu.org/licenses/>.
 // Purpose of file: Provides frame for masking button clicks and key pressed
 // ----------------------------------------------------------------------
 
-define ("PLUGIN_MASK_VERSION", "2.3.0");
+define ("PLUGIN_MASK_VERSION", "3.0.0");
 
 function plugin_init_mask() {
    global $PLUGIN_HOOKS,$LANG,$CFG_GLPI;
@@ -52,14 +52,14 @@ function plugin_version_mask() {
                 'author'         => 'Olivier Moron',
                 'license'        => 'GPLv2+',
                 'homepage'       => 'https://github.com/tomolimo/mask',
-                'minGlpiVersion' => '0.90'];
+                'minGlpiVersion' => '9.5'];
 }
 
 
 // Optional : check prerequisites before install : may print errors or add to message after redirect
 function plugin_mask_check_prerequisites() {
 
-   if (version_compare(GLPI_VERSION, '0.90', 'lt')) {
+   if (version_compare(GLPI_VERSION, '9.5', 'lt')) {
       echo "This plugin requires GLPI >= 0.90";
       return false;
    }
