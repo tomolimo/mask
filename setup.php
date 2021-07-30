@@ -32,7 +32,7 @@ along with GLPI. If not, see <http://www.gnu.org/licenses/>.
 // Purpose of file: Provides frame for masking button clicks and key pressed
 // ----------------------------------------------------------------------
 
-define ("PLUGIN_MASK_VERSION", "3.0.0");
+define ("PLUGIN_MASK_VERSION", "3.0.2");
 
 function plugin_init_mask() {
    global $PLUGIN_HOOKS,$LANG,$CFG_GLPI;
